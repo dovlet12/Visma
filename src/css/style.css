@@ -37,8 +37,18 @@ body {
 }
 
 body {
+  min-width: 320px;
   font-family: 'PT sans';
   font-weight: 400;
+}
+/* body::-webkit-scrollbar {
+  width: 0;
+  -ms-overflow-style: none;
+  overflow: -moz-scrollbars-none;
+} */
+
+.chromeperfectpixel-panel-ads {
+  display: none !important;
 }
 
 .container {
