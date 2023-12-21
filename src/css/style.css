@@ -41,7 +41,7 @@ body {
   font-family: 'PT sans';
   font-weight: 400;
 }
-/* body::-webkit-scrollbar {
+/* body::-webkit-scrollbar { 
   width: 0;
   -ms-overflow-style: none;
   overflow: -moz-scrollbars-none;
@@ -55,6 +55,24 @@ body {
   margin: 0 auto;
   max-width: 1326px;
   padding: 0 15px;
+}
+
+@media only screen and (max-width: 991px) {
+  .container {
+    max-width: 738px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .container {
+    max-width: 546px;
+  }
+}
+
+@media only screen and (max-width: 575px) {
+  .container {
+    max-width: initial;
+  }
 }
 
 .header {
@@ -75,6 +93,11 @@ body {
   border: none;
   outline: none;
   border-bottom: 1px solid gray;
+}
+
+.header__right {
+  display: flex;
+  column-gap: 113px;
 }
 
 .header__search {
@@ -487,4 +510,85 @@ body {
   font-weight: 400;
   line-height: 140%;
   text-decoration: none;
+}
+
+@media only screen and (max-width: 991px) {
+  /* max-width: 730px; */
+  .header__nav {
+    display: none;
+  }
+
+  .header__right {
+    column-gap: 40px;
+  }
+
+  .visma__block {
+    flex-direction: column;
+    column-gap: 53px;
+  }
+
+  .visma__title {
+    font-size: 33px;
+  }
+
+  .visma__subtitle {
+    font-size: 15px;
+  }
+
+  .visma__wrap {
+    margin-bottom: 32px;
+  }
+
+  .visma__box {
+    max-width: 245px;
+    height: 218px;
+  }
+
+  .visma__box-wrap p {
+    font-size: 13px;
+  }
+
+  .services__items {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .services__box {
+    max-width: 223px;
+    height: 182px;
+  }
+
+  .services__box-wrap {
+    padding: 30px 17px;
+  }
+
+  .services__box-wrap p {
+    font-size: 10px;
+  }
+
+  .company__block {
+    display: flex;
+    flex-direction: column;
+    column-gap: 0;
+  }
+
+  .company__box-wrap {
+    max-width: 447px;
+    height: 157px;
+  }
+
+  .company__box-wrap p {
+    font-size: 15px;
+  }
+
+  .company__video-wrap img {
+    max-width: 400px;
+    height: 250px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+}
+
+@media only screen and (max-width: 575px) {
 }
